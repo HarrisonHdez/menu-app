@@ -40,7 +40,7 @@ export const Navbar = () => {
                     className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""
                         }`}
                 >
-                    
+
 
                     <a
                         tabIndex={0}
@@ -141,16 +141,16 @@ export const Navbar = () => {
                     </a> */}
                 </div>
 
-                
+
 
                 <button
-                className="iconburger"
+                    className="iconburger"
                     onClick={toggleMenu}
                     aria-label="Abrir/Cerrar Menú"
                 >
                     {isOpen ? (
                         <img width={15} height={15} src="svg/closed.svg" alt="Menú cerrado" />
-                        ) : (
+                    ) : (
                         <img width={25} height={17} src="svg/menu.svg" alt="Menú abierto" />
                     )}
                 </button>
