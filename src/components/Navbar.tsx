@@ -1,5 +1,7 @@
+
 import React, { useState } from "react";
 import styles from "../styles.module.css";
+import { Link } from "react-scroll";
 
 export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +16,16 @@ export const Navbar: React.FC = () => {
             aria-label="Barra de navegacion principal"
         >
             <div className={`container ${styles.nav__content}`}>
-                <a
+                <Link
                     tabIndex={0}
                     href="#"
                     role="link"
+                    activeClass={styles.active}
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
                     className={styles.nav__logo}
                     title="Clic para ir a Home"
                     aria-label="Clic para ir a Home"
@@ -34,15 +42,19 @@ export const Navbar: React.FC = () => {
                         alt="logo"
                         className={styles.nav__logo}
                     />
-                </a>
+                </Link>
 
                 <div
-                    className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""}`}
+                    className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""
+                        }`}
                 >
-                    <a
+                    <Link
                         tabIndex={0}
-                        href="#"
-                        role="link"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={styles.nav__link}
                         title="click to go home"
                         aria-label="click to go home"
@@ -53,29 +65,35 @@ export const Navbar: React.FC = () => {
                         }}
                     >
                         Inicio
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         tabIndex={0}
-                        href="#"
-                        role="link"
+                        to="nosotros"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={styles.nav__link}
-                        title="click to go Build Your Team"
-                        aria-label="click to go Build Your Team"
+                        title="click to go home"
+                        aria-label="click to go home"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
                             }
                         }}
                     >
-                        Nosotros
-                    </a>
-                    <a
+                       Nosotros
+                    </Link>
+                    <Link
                         tabIndex={0}
-                        href="#"
-                        role="link"
+                        to="precios"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={styles.nav__link}
-                        title="click to go Build Your Team"
-                        aria-label="click to go Build Your Team"
+                        title="click to go home"
+                        aria-label="click to go home"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
@@ -83,14 +101,17 @@ export const Navbar: React.FC = () => {
                         }}
                     >
                         Precios
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         tabIndex={0}
-                        href="#"
-                        role="link"
+                        to="testimonios"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={styles.nav__link}
-                        title="click to go Build Your Team"
-                        aria-label="click to go Build Your Team"
+                        title="click to go home"
+                        aria-label="click to go home"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
@@ -98,17 +119,18 @@ export const Navbar: React.FC = () => {
                         }}
                     >
                         Testimonios
-                    </a>
-
-                    {/* Resto de enlaces... */}
-
-                    <a
+                    </Link>
+                    
+                    <Link
                         tabIndex={0}
-                        href="#"
-                        role="link"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
                         className={`${styles.nav__link_demo} `}
-                        title="click to go Book a Demo"
-                        aria-label="click to go Book a Demo"
+                        title="click to go home"
+                        aria-label="click to go home"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
@@ -116,7 +138,8 @@ export const Navbar: React.FC = () => {
                         }}
                     >
                         Contacto
-                    </a>
+                    </Link>
+
                 </div>
 
                 <button

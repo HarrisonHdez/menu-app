@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 function App() {
   return (
     <>
-      <header className={styles.home}>
+      <header className={styles.home} id="home">
         <Navbar />
         <div className={`container ${styles.home__content}`}>
           <div className={styles.home__text}>
@@ -69,7 +69,7 @@ function App() {
       </section>
 
       {/* About */}
-      <section className={styles.about} /* name="about" */>
+      <section className={styles.about} id="nosotros">
         <div className={`container ${styles.about__content}`}>
           <div className={styles.about__text}>
             <div className={styles.about__paragraphs}>
@@ -115,7 +115,7 @@ function App() {
       </section>
       {/* About */}
 
-      <section className={styles.precios}>
+      <section className={styles.precios} id="precios">
         <div className={`container ${styles.precios__content}`}>
           <TitleSection>
             Escoge tu plan <br /> para tu bienestar
@@ -253,7 +253,7 @@ function App() {
         </div>
       </section>
 
-      <section className={styles.testimonios}>
+      <section className={styles.testimonios} id="testimonios">
         <div className={`container ${styles.testimonios__content}`}>
           <TitleSection>
             Que dicen <br />

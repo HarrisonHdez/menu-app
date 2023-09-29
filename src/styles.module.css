@@ -245,14 +245,17 @@
     padding-top: 30px;
   }
   .home__title {
-    font-size: 53px;
-    line-height: 65px;
-    max-width: 580px;
+    font-size: 35px;
+    line-height: 55px;
+    max-width: 575px;
     text-align: left;
   }
   .home__subtitle {
     font-size: 20px;
     text-align: left;
+  }
+  .home__text {
+    align-items: initial;
   }
   .home__buttons {
     flex-direction: row;
@@ -263,7 +266,7 @@
 }
 @media screen and (min-width: 992px) {
   .home__title {
-    font-size: 52px;
+    font-size: 47px;
     line-height: 73px;
     max-width: 530px;
     text-align: left;
@@ -284,7 +287,14 @@
 @media screen and (min-width: 1200px) {
   .home__title {
     max-width: 615px;
+    font-size: 52px;
+    line-height: 78px;
   }
+  .home__subtitle {
+    max-width: 538px;
+  }
+
+
 }
 /* ========================
    Header
@@ -471,6 +481,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
 }
 .precios__list_text {
   display: flex;
@@ -563,6 +574,8 @@
 }
 
 .testimonios__paragraph {
+  font-family: var(--main-font);
+
 }
 .testimonios__starts {
   display: flex;
