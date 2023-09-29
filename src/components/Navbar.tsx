@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import styles from "../styles.module.css";
-import { useState } from "react";
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -37,11 +37,8 @@ export const Navbar = () => {
                 </a>
 
                 <div
-                    className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""
-                        }`}
+                    className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""}`}
                 >
-
-
                     <a
                         tabIndex={0}
                         href="#"
@@ -61,7 +58,6 @@ export const Navbar = () => {
                         tabIndex={0}
                         href="#"
                         role="link"
-                        // to="about"
                         className={styles.nav__link}
                         title="click to go Build Your Team"
                         aria-label="click to go Build Your Team"
@@ -73,15 +69,13 @@ export const Navbar = () => {
                     >
                         Nosotros
                     </a>
-
                     <a
                         tabIndex={0}
                         href="#"
                         role="link"
-                        // to="services"
                         className={styles.nav__link}
-                        title="click to go Get Hired"
-                        aria-label="click to go Get Hired"
+                        title="click to go Build Your Team"
+                        aria-label="click to go Build Your Team"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
@@ -94,24 +88,24 @@ export const Navbar = () => {
                         tabIndex={0}
                         href="#"
                         role="link"
-                        // to="services"
                         className={styles.nav__link}
-                        title="click to go Get Hired"
-                        aria-label="click to go Get Hired"
+                        title="click to go Build Your Team"
+                        aria-label="click to go Build Your Team"
                         onClick={() => {
                             if (window.innerWidth < 992) {
                                 toggleMenu();
                             }
                         }}
                     >
-                        Blog
+                        Testimonios
                     </a>
+
+                    {/* Resto de enlaces... */}
 
                     <a
                         tabIndex={0}
                         href="#"
                         role="link"
-                        // to="contact"
                         className={`${styles.nav__link_demo} `}
                         title="click to go Book a Demo"
                         aria-label="click to go Book a Demo"
@@ -123,25 +117,7 @@ export const Navbar = () => {
                     >
                         Contacto
                     </a>
-
-                    {/* <a
-                        tabIndex={0}
-                        href="#"
-                        role="link"
-                        // to="contact"
-                        className={`${styles.nav__contact_mobile} `}
-                        aria-label="Clic para ir a Contacto"
-                        onClick={() => {
-                            if (window.innerWidth < 992) {
-                                toggleMenu();
-                            }
-                        }}
-                    >
-                        Contacto
-                    </a> */}
                 </div>
-
-
 
                 <button
                     className="iconburger"

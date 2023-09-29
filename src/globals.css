@@ -1,5 +1,5 @@
 :root {
-  --color-body: #000000;
+  --light-color: #ffffff;
   --main-color: #fff0df;
   --secondary-color: #7cab28;
   --main-font: "Poppins", sans-serif;
@@ -14,7 +14,7 @@
 body {
   min-height: 100vh;
   position: relative;
-  background-color: var(--color-body);
+  background-color: var(--main-color);
 }
 
 a {
