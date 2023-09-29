@@ -131,7 +131,6 @@
 ======================== */
 .home {
   width: 100%;
-  background-color: var(--main-color);
 }
 .home__content {
   min-height: 746px;
@@ -240,7 +239,6 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .home__content {
     flex-direction: row;
@@ -281,7 +279,6 @@
   }
   .home__link_demo {
     max-width: 239px;
-  
   }
 }
 @media screen and (min-width: 1200px) {
@@ -401,10 +398,110 @@
   width: 100%;
 }
 .precios__content {
-  background-color: red;
-  height: 500px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
-
+.precios__cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin: auto;
+}
+.precios__card {
+  min-height: 400px;
+  max-width: 310px;
+  width: 100%;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  /* gap: 38px; */
+  background-color: #fcbf79;
+  padding: 25px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+.precios__card_important {
+  min-height: 530px;
+  max-width: 335px;
+  background-color: var(--secondary-color);
+  gap: 35px;
+  color: var(--light-color);
+}
+.precios__head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.precios__title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: var(--color-title);
+}
+.precios__import {
+  color: var(--light-color);
+}
+.precios__subtitle {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.precios__subtitle_import {
+}
+.precios__price {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.precios__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.precios__list_text {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.precios__button {
+  width: 100%;
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 5px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--light-color);
+  border: none;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+.precios__button_import {
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+}
+@media screen and (min-width: 768px) {
+  .precios__cards {
+    flex-direction: row;
+  }
+}
 /* ========================
    Precios
 ======================== */
@@ -415,49 +512,65 @@
   width: 100%;
 }
 .testimonios__content {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.testimonios__cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   gap: 50px;
-  padding: 200px 0;
+}
+.testimonios__card {
+  min-height: 300px;
+  max-width: 350px;
+  width: 100%;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: black;
+
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #fcbf79;
+  padding: 20px;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+.testimonios__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .testimonios__name {
   font-family: var(--main-font);
   font-size: 16px;
-  color: var(--light-color);
+
   font-weight: 600;
 }
 .testimonios__profession {
   font-family: var(--main-font);
   font-size: 14px;
-  color: var(--light-color);
   font-weight: 400;
 }
-.testimonios__card {
-  font-family: var(--main-font);
-  font-size: 14px;
-  color: var(--light-color);
-  font-weight: 400;
 
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 350px;
-  width: 100%;
-  background-color: #fcbf79;
-  padding: 40px 20px;
-  min-height: 300px;
-  border-radius: 0 26px;
-
-  box-shadow: 0 0 36px 0px rgb(51 51 51 / 34%);
-  border: 2px solid #00000047;
-}
 .testimonios__paragraph {
+}
+.testimonios__starts {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
-  .testimonios__content {
+  .testimonios__cards {
     flex-direction: row;
   }
 }

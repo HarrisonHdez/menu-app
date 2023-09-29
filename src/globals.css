@@ -1,7 +1,8 @@
 :root {
   --light-color: #ffffff;
-  --main-color: #fff0df;
+  --main-color: #FFFAF4;
   --secondary-color: #7cab28;
+  --color-title: #1F1F1F;
   --main-font: "Poppins", sans-serif;
 }
 
@@ -22,8 +23,8 @@ a {
   color: red;
 }
 
-a {
-  text-decoration: none;
+ul li {
+  list-style: none;
 }
 
 .iconburger {
