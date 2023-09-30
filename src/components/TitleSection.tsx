@@ -24,7 +24,9 @@ interface TitleSectionProps {
 
 const TitleSection: React.FC<TitleSectionProps> = ({ children }) => {
   return (
-    <Title data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <Title data-aos="fade-up"
+      ata-aos-delay="300"
+      data-aos-duration="800">
       {children}
     </Title>
   );

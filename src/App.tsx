@@ -1,25 +1,39 @@
 import { Navbar } from "./components/Navbar";
 import TitleSection from "./components/TitleSection";
 import { NavLink } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import styles from "./styles.module.css";
 import Footer from "./components/Footer";
+
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <header className={styles.home} id="home">
         <Navbar />
-        <div className={`container ${styles.home__content}`}>
+        <div className={`container ${styles.home__content}`} >
           <div className={styles.home__text}>
             <h1
               className={`${styles.home__title} animate__animated animate__fadeIn`}
-            >
+              data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               Planifica Tu Menú Semanal De Forma Rápida y Sencilla
             </h1>
 
             <p
               className={`${styles.home__subtitle} animate__animated animate__fadeIn`}
-            >
+              data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               Organiza tus comidas de toda la semana en minutos. ¡De manera
               sencilla y sin complicaciones!
             </p>
@@ -34,7 +48,9 @@ function App() {
                 className={`${styles.home__link_demo} animate__animated animate__fadeIn`}
                 title="Clic para ir a About"
                 aria-label="Book a Demo"
-              >
+                data-aos="fade-up"
+                ata-aos-delay="300"
+                data-aos-duration="800">
                 Empieza Gratis
               </NavLink>
               <a
@@ -43,7 +59,9 @@ function App() {
                 className={`${styles.home__button} animate__animated animate__fadeIn`}
                 title="Clic para ir a About"
                 aria-label="Contact Us"
-              >
+                data-aos="fade-up"
+                ata-aos-delay="300"
+                data-aos-duration="800">
                 Aprende Más
               </a>
             </div>
@@ -52,7 +70,7 @@ function App() {
             <img
               data-aos="fade-up"
               ata-aos-delay="300"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               width={500}
               height={500}
               src="/image/home.jpg"
@@ -63,8 +81,10 @@ function App() {
         </div>
       </header>
 
-      <section className={styles.customers}>
-        <div className={`container ${styles.customers__content} `}>
+      <section className={styles.customers} >
+        <div className={`container ${styles.customers__content} `} data-aos="fade-up"
+          ata-aos-delay="300"
+          data-aos-duration="800">
           <img width={180} height={32} src="/svg/logo1.svg" alt="customers" />
           <img width={180} height={32} src="/svg/logo2.svg" alt="customers" />
           <img width={180} height={52} src="/svg/logo3.svg" alt="customers" />
@@ -73,17 +93,17 @@ function App() {
       </section>
 
       <section className={styles.about} id="nosotros">
-      <TitleSection>
-            Sobre Nosotros
-          </TitleSection>
+        <TitleSection>
+          Sobre Nosotros
+        </TitleSection>
         <div className={`container ${styles.about__content}`}>
-       
+
           <div className={styles.about__text}>
             <div className={styles.about__paragraphs}>
               <p
                 data-aos="fade-up"
                 ata-aos-delay="300"
-                data-aos-duration="1000"
+                data-aos-duration="800"
                 className={styles.about__paragraph}
               >
                 Somos un grupo de profesionales que, como tú, no teníamos tiempo
@@ -94,7 +114,7 @@ function App() {
               <p
                 data-aos="fade-up"
                 ata-aos-delay="300"
-                data-aos-duration="1000"
+                data-aos-duration="800"
                 className={styles.about__paragraph}
               >
                 Nuestro objetivo es ayudarte a planificar
@@ -109,7 +129,7 @@ function App() {
             <img
               data-aos="fade-up"
               ata-aos-delay="300"
-              data-aos-duration="1000"
+              data-aos-duration="800"
               width={483}
               height={391}
               src="/image/about.png"
@@ -127,14 +147,16 @@ function App() {
           </TitleSection>
 
           <div className={styles.precios__cards}>
-            <div className={styles.precios__card}>
+            <div className={styles.precios__card} data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <h2 className={styles.precios__title}>Plan Gratuito</h2>
               <h3 className={styles.precios__subtitle}>
                 Planificador de Inicio
               </h3>
               <h4 className={styles.precios__price}>Gratis</h4>
               <ul className={styles.precios__list}>
-                <div className={styles.precios__list_text}>
+                <div className={styles.precios__list_text} >
                   <img width={20} height={17} src="svg/check.svg" alt="check" />
                   <li>Crea un menú semanal básico.</li>
                 </div>
@@ -170,7 +192,9 @@ function App() {
             </div>
             <div
               className={`${styles.precios__card} ${styles.precios__card_important}`}
-            >
+              data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <div className={styles.precios__head}>
                 <h2 className={`${styles.precios__title} ${styles.precios__import}`}>Plan Estándar</h2>
                 <h3 className={styles.precios__subtitle}>
@@ -213,7 +237,9 @@ function App() {
                 Empezar
               </a>
             </div>
-            <div className={styles.precios__card}>
+            <div className={styles.precios__card} data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <h2 className={styles.precios__title}>Plan Premium</h2>
               <h3 className={styles.precios__subtitle}>
                 Chef Personal
@@ -266,7 +292,9 @@ function App() {
           </TitleSection>
 
           <div className={styles.testimonios__cards}>
-            <div className={styles.testimonios__card}>
+            <div className={styles.testimonios__card} data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <div className={styles.testimonios__text}>
                 <h2 className={styles.testimonios__name}>Laura Pérez</h2>
                 <h3 className={styles.testimonios__profession}>
@@ -288,7 +316,9 @@ function App() {
                 />
               </div>
             </div>
-            <div className={styles.testimonios__card}>
+            <div className={styles.testimonios__card} data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <div className={styles.testimonios__text}>
                 <h2 className={styles.testimonios__name}>Carlos Gómez</h2>
                 <h3 className={styles.testimonios__profession}>
@@ -310,7 +340,9 @@ function App() {
                 />
               </div>
             </div>
-            <div className={styles.testimonios__card}>
+            <div className={styles.testimonios__card} data-aos="fade-up"
+              ata-aos-delay="300"
+              data-aos-duration="800">
               <div className={styles.testimonios__text}>
                 <h2 className={styles.testimonios__name}>Ana Rodríguez</h2>
                 <h3 className={styles.testimonios__profession}>
@@ -337,7 +369,9 @@ function App() {
       </section>
 
       <section className={styles.download}>
-        <div className={`container ${styles.download__content} `}>
+        <div className={`container ${styles.download__content} `} data-aos="fade-up"
+          ata-aos-delay="300"
+          data-aos-duration="800">
           <div className={styles.download__text}>
             <h2 className={styles.download__title}>Descarga nuestra App</h2>
             <div className={styles.download__buttons}>
@@ -355,7 +389,7 @@ function App() {
         </div>
       </section>
 
-    
+
 
 
 

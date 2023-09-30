@@ -13,7 +13,7 @@ export const NavbarSecond: React.FC = () => {
         <nav
             className={` ${styles.nav} animate__animated  animate__fadeInDown`}
             aria-label="Barra de navegacion principal"
-        >
+            data-aos="fade-down">
             <div className={`container ${styles.nav__content}`}>
                 <NavLink
                     tabIndex={0}
