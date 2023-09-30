@@ -43,7 +43,7 @@ export const NavbarSecond: React.FC = () => {
                 >
                     <NavLink
                         tabIndex={0}
-                        to="testimonios"
+                        to={"#"}
                         className={styles.nav__link}
                         title="click to go home"
                         aria-label="click to go home"
@@ -58,7 +58,7 @@ export const NavbarSecond: React.FC = () => {
 
                     <NavLink
                         tabIndex={0}
-                        to="home"
+                        to={"#"}
                         className={`${styles.nav__link_contact} `}
                         title="click to go home"
                         aria-label="click to go home"
