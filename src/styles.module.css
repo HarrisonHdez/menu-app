@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 9;
   backdrop-filter: blur(3px);
+  background-color: var(--main-color);
 }
 .nav__content {
   display: flex;
@@ -293,8 +294,6 @@
   .home__subtitle {
     max-width: 538px;
   }
-
-
 }
 /* ========================
    Header
@@ -339,9 +338,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-  padding: 136px 0;
+  padding: 15px 0 135px;
   align-items: center;
-  gap: 50px;
 }
 .about__text {
   display: flex;
@@ -359,10 +357,11 @@
 }
 .about__paragraph {
   color: #878787;
-  font-family: Public Sans;
+  font-family: var(--main-font);
+
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 27px;
   letter-spacing: 0.3px;
 }
@@ -381,6 +380,11 @@
   width: 100%;
   object-fit: contain;
 }
+@media screen and (min-width: 575px) {
+  .about__content {
+    gap: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__text {
     gap: 48px;
@@ -394,6 +398,7 @@
 @media screen and (min-width: 992px) {
   .about__content {
     flex-direction: row;
+    padding: 50px 0 135px;
   }
 }
 /*____________ About ___________*/
@@ -449,9 +454,9 @@
   color: var(--light-color);
 }
 .precios__head {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .precios__title {
   font-family: var(--main-font);
@@ -481,7 +486,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-
 }
 .precios__list_text {
   display: flex;
@@ -575,7 +579,6 @@
 
 .testimonios__paragraph {
   font-family: var(--main-font);
-
 }
 .testimonios__starts {
   display: flex;
@@ -591,16 +594,92 @@
    Testimonios
 ======================== */
 /* ========================
-   Contacto
+   Descarga Apps
 ======================== */
-.contacto {
+.download {
   width: 100%;
 }
-.contacto__content {
-  background-color: rgb(128, 255, 0);
-  height: 500px;
+.download__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 100px 0;
 }
+.download__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+}
+.download__title {
+  font-family: var(--main-font);
+  font-size: 25px;
 
+  font-weight: 600;
+}
+.download__image {
+  max-width: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+.download__buttons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.download__button {
+  cursor: pointer;
+  padding: 20px 35px;
+  width: 100%;
+  font-family: var(--main-font);
+  font-weight: 600;
+  max-width: 400px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+@media screen and (min-width: 768px) {
+  .download__content {
+    flex-direction: row;
+  }
+  .download__buttons {
+    flex-direction: row;
+  }
+}
 /* ========================
-   Contacto
+   Descarga Apps
 ======================== */
+
+.footer {
+  width: 100%;
+  background-color: var(--dark-color);
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px 0;
+}
+.footer__content p {
+  color: var(--light-color);
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}

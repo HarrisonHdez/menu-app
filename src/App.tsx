@@ -1,6 +1,9 @@
 import { Navbar } from "./components/Navbar";
 import TitleSection from "./components/TitleSection";
+import { NavLink } from 'react-router-dom'
+
 import styles from "./styles.module.css";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -22,19 +25,20 @@ function App() {
             </p>
 
             <div className={styles.home__buttons}>
-              <a
+
+              <NavLink
                 tabIndex={0}
-                href="#"
+                to={"/menu-planner"}
+
                 role="link"
                 className={`${styles.home__link_demo} animate__animated animate__fadeIn`}
                 title="Clic para ir a About"
                 aria-label="Book a Demo"
               >
                 Empieza Gratis
-              </a>
+              </NavLink>
               <a
                 tabIndex={0}
-                href="#"
                 role="link"
                 className={`${styles.home__button} animate__animated animate__fadeIn`}
                 title="Clic para ir a About"
@@ -70,7 +74,11 @@ function App() {
 
       {/* About */}
       <section className={styles.about} id="nosotros">
+      <TitleSection>
+            Sobre Nosotros
+          </TitleSection>
         <div className={`container ${styles.about__content}`}>
+       
           <div className={styles.about__text}>
             <div className={styles.about__paragraphs}>
               <p
@@ -90,8 +98,7 @@ function App() {
                 data-aos-duration="1000"
                 className={styles.about__paragraph}
               >
-                Te damos la bienvenida a nuestra plataforma diseñada para
-                simplificar tu vida. Nuestro objetivo es ayudarte a planificar
+                Nuestro objetivo es ayudarte a planificar
                 tu menú semanal de manera rápida y sencilla. Con nuestra
                 herramienta intuitiva, puedes organizar tus comidas con
                 facilidad y llevar un estilo de vida más saludable y delicioso.
@@ -169,7 +176,7 @@ function App() {
               <div className={styles.precios__head}>
                 <h2 className={`${styles.precios__title} ${styles.precios__import}`}>Plan Estándar</h2>
                 <h3 className={styles.precios__subtitle}>
-                Planificador Pro
+                  Planificador Pro
                 </h3>
                 <h4 className={styles.precios__price}>Precio: $10 al mes</h4>
               </div>
@@ -331,9 +338,30 @@ function App() {
         </div>
       </section>
 
-      <section className={styles.contacto}>
-        <div className={styles.contacto__content}></div>
+      <section className={styles.download}>
+        <div className={`container ${styles.download__content} `}>
+          <div className={styles.download__text}>
+            <h2 className={styles.download__title}>Descarga nuestra App</h2>
+            <div className={styles.download__buttons}>
+              <button className={styles.download__button}>
+                GOOGLE PLAY
+              </button>
+              <button className={styles.download__button}>
+                App Store
+              </button>
+            </div>
+          </div>
+
+
+          <img className={styles.download__image} width={500} height={500} src="image/apps.png" alt="apps" />
+        </div>
       </section>
+
+    
+
+
+
+      <Footer />
     </>
   );
 }

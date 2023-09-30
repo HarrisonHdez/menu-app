@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "../styles.module.css";
 import { Link } from "react-scroll";
 
-export const Navbar: React.FC = () => {
+export const NavbarSecond: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -70,7 +70,7 @@ export const Navbar: React.FC = () => {
                         to="nosotros"
                         spy={true}
                         smooth={true}
-                        offset={-150}
+                        offset={-70}
                         duration={500}
                         className={styles.nav__link}
                         title="click to go home"
@@ -106,7 +106,7 @@ export const Navbar: React.FC = () => {
                         to="testimonios"
                         spy={true}
                         smooth={true}
-                        offset={50}
+                        offset={-70}
                         duration={500}
                         className={styles.nav__link}
                         title="click to go home"

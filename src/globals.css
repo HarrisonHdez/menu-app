@@ -1,8 +1,10 @@
 :root {
   --light-color: #ffffff;
+  --dark-color: #000000;
   --main-color: #FFFAF4;
   --secondary-color: #7cab28;
   --color-title: #1F1F1F;
+
   --main-font: "Poppins", sans-serif;
 }
 
