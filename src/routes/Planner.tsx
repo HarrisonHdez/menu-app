@@ -9,6 +9,7 @@ const Planner: React.FC = () => {
     return (
         <main>
             <NavbarSecond />
+            {/* Header */}
             <header className={styles.planner}>
                 <div
                     className={styles.planner__content}
@@ -33,7 +34,9 @@ const Planner: React.FC = () => {
                     </NavLink>
                 </div>
             </header>
+            {/* <Header */}
 
+            {/* Lunes */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content} `}
@@ -58,7 +61,9 @@ const Planner: React.FC = () => {
                     <SelectMenu data={data} />
                 </div>
             </section>
+            {/* <Lunes */}
 
+            {/* Martes */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content} ${styles.day__content_reverse}`}
@@ -82,6 +87,9 @@ const Planner: React.FC = () => {
                     </div>
                 </div>
             </section>
+            {/* <Martes */}
+
+            {/* Miercoles */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content}`}
@@ -107,6 +115,9 @@ const Planner: React.FC = () => {
                     <SelectMenu data={data} />
                 </div>
             </section>
+            {/* Miercoles */}
+
+            {/* Jueves */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content} ${styles.day__content_reverse}`}
@@ -131,6 +142,9 @@ const Planner: React.FC = () => {
                     </div>
                 </div>
             </section>
+            {/* Jueves */}
+
+            {/* Viernes */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content}`}
@@ -156,6 +170,9 @@ const Planner: React.FC = () => {
                     <SelectMenu data={data} />
                 </div>
             </section>
+            {/*  Viernes */}
+
+            {/* Sabados */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content} ${styles.day__content_reverse}`}
@@ -180,6 +197,9 @@ const Planner: React.FC = () => {
                     </div>
                 </div>
             </section>
+            {/* <Sabados */}
+
+            {/* Domingos */}
             <section className={styles.day}>
                 <div
                     className={`container ${styles.day__content}`}
@@ -204,7 +224,9 @@ const Planner: React.FC = () => {
                     <SelectMenu data={data} />
                 </div>
             </section>
+            {/* <Domingos */}
 
+            {/* Meta */}
             <section className={styles.goal}>
                 <img
                     className={styles.image}
@@ -215,8 +237,10 @@ const Planner: React.FC = () => {
                     loading="lazy"
                     data-aos="fade-up"
                     ata-aos-delay="300"
-                    data-aos-duration="800" />
+                    data-aos-duration="800"
+                />
             </section>
+            {/* <Meta */}
 
             <Footer />
         </main>

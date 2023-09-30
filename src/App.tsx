@@ -15,8 +15,11 @@ function App() {
       once: true,
     });
   }, []);
+
+  
   return (
     <>
+      {/* Header */}
       <header className={styles.home} id="home">
         <Navbar />
         <div className={`container ${styles.home__content}`} >
@@ -81,7 +84,9 @@ function App() {
           </div>
         </div>
       </header>
+      {/* <Header */}
 
+      {/* customers */}
       <section className={styles.customers} >
         <div className={`container ${styles.customers__content} `} data-aos="fade-up"
           ata-aos-delay="300"
@@ -92,7 +97,9 @@ function App() {
           <img width={180} height={44} src="/svg/logo4.svg" alt="customers" />
         </div>
       </section>
+      {/* <customers */}
 
+      {/* About */}
       <section className={styles.about} id="nosotros">
         <TitleSection>
           Sobre Nosotros
@@ -140,7 +147,9 @@ function App() {
           </div>
         </div>
       </section>
+      {/* <About */}
 
+      {/* Precios */}
       <section className={styles.precios} id="precios">
         <div className={`container ${styles.precios__content}`}>
           <TitleSection>
@@ -284,7 +293,9 @@ function App() {
           </div>
         </div>
       </section>
+      {/* <Precios */}
 
+      {/* Testomonios */}
       <section className={styles.testimonios} id="testimonios">
         <div className={`container ${styles.testimonios__content}`}>
           <TitleSection>
@@ -368,7 +379,9 @@ function App() {
           </div>
         </div>
       </section>
+      {/* <Testomonios */}
 
+      {/* Descargar */}
       <section className={styles.download}>
         <div className={`container ${styles.download__content} `} data-aos="fade-up"
           ata-aos-delay="300"
@@ -389,6 +402,7 @@ function App() {
           <img className={styles.download__image} width={500} height={500} src="image/apps.png" alt="apps" />
         </div>
       </section>
+      {/* <Descargar */}
 
 
 
