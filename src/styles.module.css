@@ -1,5 +1,5 @@
 /* ========================
-   Barra de Navegacion
+   Nav
 ======================== */
 .nav {
   width: 100%;
@@ -22,6 +22,20 @@
   display: flex;
   display: none;
 }
+.nav__link {
+  color: var(--color-text);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  width: 90%;
+  text-align: left;
+  cursor: pointer;
+  padding: 12px 0;
+  text-transform: capitalize;
+}
 .mobile__menu {
   display: flex;
   flex-direction: column;
@@ -37,43 +51,8 @@
   padding-bottom: 100px;
   text-transform: capitalize;
 }
-.nav__contact_mobile {
-  text-align: center;
-  font-family: var(--main-font);
 
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 17.12px; /* 107% */
-
-  color: #ffffff;
-  padding: 12px 0;
-  text-align: center;
-  width: 90%;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-
-  border-radius: 50px;
-  background-color: var(--secondary-color);
-}
-.nav__link {
-  color: #878787;
-  font-family: var(--main-font);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  cursor: pointer;
-  width: 90%;
-  text-align: left;
-  cursor: pointer;
-  padding: 12px 0;
-  text-transform: capitalize;
-}
-.nav__link_demo {
+.nav__link_contact {
   display: flex;
   max-width: 350px;
   width: 100%;
@@ -84,14 +63,14 @@
   border-radius: 50px;
   background-color: var(--secondary-color);
 
-  color: #fff;
+  color: var(--light-color);
   text-align: center;
   font-family: var(--main-font);
 
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 17.12px; /* 107% */
+  line-height: 17.12px;
 }
 
 @media screen and (min-width: 992px) {
@@ -115,17 +94,15 @@
   .mobile__menu {
     display: none;
   }
-  .nav__contact_mobile {
-    display: none;
-  }
+  
 }
 
 .active {
-  color: #ffffff;
+  color: var(--light-color);
 }
 
 /* ========================
-   Barra de Navegacion
+   Nav
 ======================== */
 /* ========================
    Header
@@ -148,7 +125,7 @@
   gap: 28px;
 }
 .home__title {
-  color: #0f0d0d;
+  color: var(--color-title);
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -160,7 +137,7 @@
 
 .home__subtitle {
   text-align: left;
-  color: #969696;
+  color: var(--color-text);
   font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
@@ -169,7 +146,7 @@
   width: 100%;
   letter-spacing: 0.3px;
   text-align: center;
-  line-height: 27px; /* 168.75% */
+  line-height: 27px;
   max-width: 342px;
 }
 .home__buttons {
@@ -185,7 +162,7 @@
   justify-content: center;
   align-items: flex-start;
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--light-color);
   text-align: center;
   font-family: var(--main-font);
   font-size: 16px;
@@ -206,14 +183,14 @@
   justify-content: center;
   align-items: flex-start;
   border-radius: 12px;
-  color: #000000;
+  color: var(--dark-color);
   text-align: center;
   font-family: var(--main-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 16.96px;
-  border: 1px solid #0000003d;
+  border: 1px solid var(--dark-color);
 }
 .home__image {
 }
@@ -269,7 +246,6 @@
   .home__title {
     font-size: 47px;
     line-height: 73px;
-    max-width: 530px;
     text-align: left;
   }
   .home__text {
@@ -328,7 +304,6 @@
 /* ========================
    Nosotros
 ======================== */
-/*____________ About ___________*/
 .about {
   width: 100%;
   margin-top: 40px;
@@ -356,7 +331,7 @@
   gap: 30px;
 }
 .about__paragraph {
-  color: #878787;
+  color: var(--color-text);
   font-family: var(--main-font);
 
   font-size: 16px;
@@ -368,9 +343,6 @@
 .about__links {
   display: flex;
   gap: 20px;
-}
-.about__paragraph span {
-  color: #fff;
 }
 
 .about__image {
@@ -401,7 +373,6 @@
     padding: 50px 0 135px;
   }
 }
-/*____________ About ___________*/
 
 /* ========================
    Nosotros
@@ -431,14 +402,13 @@
   width: 100%;
   font-family: var(--main-font);
   font-size: 14px;
-  color: black;
+  color: var(--dark-color);
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  /* gap: 38px; */
-  background-color: #fcbf79;
+  background-color: var(--color-card);
   padding: 25px;
   border-radius: 26px;
   -webkit-border-radius: 26px;
@@ -474,8 +444,7 @@
   font-size: 16px;
   text-align: center;
 }
-.precios__subtitle_import {
-}
+
 .precios__price {
   font-family: var(--main-font);
   font-weight: 600;
@@ -545,14 +514,14 @@
   width: 100%;
   font-family: var(--main-font);
   font-size: 14px;
-  color: black;
+  color: var(--dark-color);
 
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
-  background-color: #fcbf79;
+  background-color: var(--color-card);
   padding: 20px;
   border-radius: 26px;
   -webkit-border-radius: 26px;

@@ -4,8 +4,9 @@
   --main-color: #FFFAF4;
   --secondary-color: #7cab28;
   --color-title: #1F1F1F;
-
+  --color-text: #878787;
   --main-font: "Poppins", sans-serif;
+  --color-card: #fcbf79;
 }
 
 .container {

@@ -127,7 +127,7 @@ export const Navbar: React.FC = () => {
                         smooth={true}
                         offset={-70}
                         duration={500}
-                        className={`${styles.nav__link_demo} `}
+                        className={`${styles.nav__link_contact} `}
                         title="click to go home"
                         aria-label="click to go home"
                         onClick={() => {

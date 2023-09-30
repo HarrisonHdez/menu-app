@@ -72,7 +72,6 @@ function App() {
         </div>
       </section>
 
-      {/* About */}
       <section className={styles.about} id="nosotros">
       <TitleSection>
             Sobre Nosotros
@@ -120,7 +119,6 @@ function App() {
           </div>
         </div>
       </section>
-      {/* About */}
 
       <section className={styles.precios} id="precios">
         <div className={`container ${styles.precios__content}`}>

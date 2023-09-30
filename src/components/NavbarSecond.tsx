@@ -1,7 +1,6 @@
-
 import React, { useState } from "react";
 import styles from "../styles.module.css";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export const NavbarSecond: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,15 +15,10 @@ export const NavbarSecond: React.FC = () => {
             aria-label="Barra de navegacion principal"
         >
             <div className={`container ${styles.nav__content}`}>
-                <Link
+                <NavLink
                     tabIndex={0}
                     role="link"
-                    activeClass={styles.active}
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
+                    to={"/"}
                     className={styles.nav__logo}
                     title="Clic para ir a Home"
                     aria-label="Clic para ir a Home"
@@ -41,73 +35,15 @@ export const NavbarSecond: React.FC = () => {
                         alt="logo"
                         className={styles.nav__logo}
                     />
-                </Link>
+                </NavLink>
 
                 <div
                     className={`${styles.nav__links} ${isOpen ? styles.mobile__menu : ""
                         }`}
                 >
-                    <Link
-                        tabIndex={0}
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className={styles.nav__link}
-                        title="click to go home"
-                        aria-label="click to go home"
-                        onClick={() => {
-                            if (window.innerWidth < 992) {
-                                toggleMenu();
-                            }
-                        }}
-                    >
-                        Inicio
-                    </Link>
-                    <Link
-                        tabIndex={0}
-                        to="nosotros"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className={styles.nav__link}
-                        title="click to go home"
-                        aria-label="click to go home"
-                        onClick={() => {
-                            if (window.innerWidth < 992) {
-                                toggleMenu();
-                            }
-                        }}
-                    >
-                        Nosotros
-                    </Link>
-                    <Link
-                        tabIndex={0}
-                        to="precios"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className={styles.nav__link}
-                        title="click to go home"
-                        aria-label="click to go home"
-                        onClick={() => {
-                            if (window.innerWidth < 992) {
-                                toggleMenu();
-                            }
-                        }}
-                    >
-                        Precios
-                    </Link>
-                    <Link
+                    <NavLink
                         tabIndex={0}
                         to="testimonios"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
                         className={styles.nav__link}
                         title="click to go home"
                         aria-label="click to go home"
@@ -117,17 +53,13 @@ export const NavbarSecond: React.FC = () => {
                             }
                         }}
                     >
-                        Testimonios
-                    </Link>
+                        Tips
+                    </NavLink>
 
-                    <Link
+                    <NavLink
                         tabIndex={0}
                         to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className={`${styles.nav__link_demo} `}
+                        className={`${styles.nav__link_contact} `}
                         title="click to go home"
                         aria-label="click to go home"
                         onClick={() => {
@@ -137,8 +69,7 @@ export const NavbarSecond: React.FC = () => {
                         }}
                     >
                         Contacto
-                    </Link>
-
+                    </NavLink>
                 </div>
 
                 <button
@@ -147,7 +78,12 @@ export const NavbarSecond: React.FC = () => {
                     aria-label="Abrir/Cerrar Menú"
                 >
                     {isOpen ? (
-                        <img width={15} height={15} src="svg/closed.svg" alt="Menú cerrado" />
+                        <img
+                            width={15}
+                            height={15}
+                            src="svg/closed.svg"
+                            alt="Menú cerrado"
+                        />
                     ) : (
                         <img width={25} height={17} src="svg/menu.svg" alt="Menú abierto" />
                     )}
