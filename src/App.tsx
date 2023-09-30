@@ -53,7 +53,8 @@ function App() {
                 data-aos-duration="800">
                 Empieza Gratis
               </NavLink>
-              <a
+              <NavLink
+                to={"/#"}
                 tabIndex={0}
                 role="link"
                 className={`${styles.home__button} animate__animated animate__fadeIn`}
@@ -63,7 +64,7 @@ function App() {
                 ata-aos-delay="300"
                 data-aos-duration="800">
                 Aprende Más
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className={styles.home__image}>

@@ -89,7 +89,7 @@ const SelectMenu: React.FC<SelectMenuProps> = ({ data }) => {
           <p className={styles.form__title}>
             Instrucciones: {selectedRecipe.instrucciones}
           </p>
-          <img src={selectedRecipe.foto} alt={selectedRecipe.nombre} />
+          <img className={styles.form__image} src={selectedRecipe.foto} alt={selectedRecipe.nombre} loading="lazy"/>
 
           <div>
             <h4 className={styles.form__title}>Ingredientes:</h4>

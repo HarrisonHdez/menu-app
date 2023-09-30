@@ -251,7 +251,7 @@
                 3
             ],
             "instrucciones": "Mezcla las papas cocidas con cebolla y tomates, luego aliña con aceite de oliva, vinagre balsámico, sal y pimienta. Refrigera antes de servir.",
-            "foto": "url_imagen_ensalada_papas.jpg"
+            "foto": "image/ensalada.avif"
         },
         {
             "id": 2,
@@ -263,7 +263,7 @@
                 8
             ],
             "instrucciones": "Saltea cebolla, ajo y tomates en aceite de oliva. Agrega caldo de pollo y hierve. Licúa y condimenta con sal, pimienta y vinagre. Sirve caliente.",
-            "foto": "url_imagen_sopa_tomate.jpg"
+            "foto": "image/tomate.jpg"
         },
         {
             "id": 3,
@@ -276,7 +276,7 @@
                 17
             ],
             "instrucciones": "Cocina la pasta, luego mezcla con una salsa de ajo, crema, queso parmesano y pimienta cayena. Sirve con pepinillos.",
-            "foto": "url_imagen_pasta_alfredo.jpg"
+            "foto": "image/alfredo.jpg"
         },
         {
             "id": 4,
@@ -288,7 +288,7 @@
                 8
             ],
             "instrucciones": "Marina el salmón en aceite de oliva, ajo, sal, pimienta y vinagre. Asa a la parrilla hasta que esté dorado. Sirve con maíz dulce.",
-            "foto": "url_imagen_salmon_parrilla.jpg"
+            "foto": "image/salmonparrilla.jpg"
         },
         {
             "id": 5,
@@ -299,7 +299,7 @@
                 7
             ],
             "instrucciones": "Bate los huevos con ajo y sal. Cocina a fuego lento hasta que estén revueltos. Sirve con zanahorias ralladas.",
-            "foto": "url_imagen_huevos_revueltos.jpg"
+            "foto": "image/huevos.jpeg"
         },
         {
             "id": 6,
@@ -312,7 +312,7 @@
                 34
             ],
             "instrucciones": "Mezcla las espinacas con pechuga de pollo a la parrilla, arroz, salsa de soja y cilantro. Aliña con miel y sirve.",
-            "foto": "url_imagen_ensalada_espinacas.jpg"
+            "foto": "image/espinacas.jpg"
         },
         {
             "id": 7,
@@ -325,7 +325,7 @@
                 35
             ],
             "instrucciones": "Saltea tofu, brócoli y champiñones en salsa de soja. Sirve sobre pasta de espelta y decora con cilantro.",
-            "foto": "url_imagen_tofu_brocoli.jpg"
+            "foto": "image/brocoli.jpg"
         },
         {
             "id": 8,
@@ -338,7 +338,7 @@
                 38
             ],
             "instrucciones": "Prepara carne molida con salsa de tomate y cilantro. Rellena tacos de pasta de espelta y decora con pimientos verdes.",
-            "foto": "url_imagen_tacos_carne_molida.jpg"
+            "foto": "image/tacos.jpeg"
         },
         {
             "id": 9,
@@ -350,7 +350,7 @@
                 39
             ],
             "instrucciones": "Marina pollo en miel y asa al horno con papas y calabacín. Sirve con lentejas cocidas.",
-            "foto": "url_imagen_pollo_horno_miel.jpg"
+            "foto": "image/pollomiel.jpg"
         },
         {
             "id": 10,
@@ -363,7 +363,7 @@
                 40
             ],
             "instrucciones": "Saltea champiñones y setas shiitake en queso cheddar y salsa de tomate. Sirve caliente.",
-            "foto": "url_imagen_sopa_champinones.jpg"
+            "foto": "image/sopachampinones.jpg"
         },
         {
             "id": 11,
@@ -374,7 +374,7 @@
                 32
             ],
             "instrucciones": "Extiende masa de pizza, agrega salsa de tomate, queso cheddar y champiñones. Hornea hasta que esté dorada.",
-            "foto": "url_imagen_pizza_margarita.jpg"
+            "foto": "image/pizza.jpg"
         },
         {
             "id": 12,
@@ -387,7 +387,7 @@
                 33
             ],
             "instrucciones": "Sazona salmón con salsa de soja y miel. Asa a la parrilla y sirve con arroz, papas fritas y lentejas.",
-            "foto": "url_imagen_salmon_parrilla.jpg"
+            "foto": "image/salmao.jpg"
         },
         {
             "id": 13,
@@ -400,7 +400,7 @@
                 34
             ],
             "instrucciones": "Combina pollo a la parrilla con espinacas, arroz, calabacín y cilantro. Aliña con salsa de soja y miel.",
-            "foto": "url_imagen_ensalada_pollo.jpg"
+            "foto": "image/ensaladapollo.jpg"
         },
         {
             "id": 14,
@@ -413,7 +413,7 @@
                 37
             ],
             "instrucciones": "Cocina pasta de trigo integral, ternera en salsa de tomate y setas shiitake. Monta la lasagna y hornea.",
-            "foto": "url_imagen_lasagna_ternera.jpg"
+            "foto": "image/lasagna.jpg"
         },
         {
             "id": 15,
@@ -426,7 +426,7 @@
                 36
             ],
             "instrucciones": "Saltea champiñones y arroz en queso cheddar. Agrega pechuga de pollo a la parrilla y sirve caliente.",
-            "foto": "url_imagen_risotto_champinones.jpg"
+            "foto": "image/rissoto.jpeg"
         },
         {
             "id": 16,
@@ -439,7 +439,7 @@
                 40
             ],
             "instrucciones": "Cocina lentejas con espinacas, pasta de espelta, carne molida y pimientos verdes. Sirve caliente.",
-            "foto": "url_imagen_sopa_lentejas.jpg"
+            "foto": "image/lentejas.avif"
         },
         {
             "id": 17,
@@ -452,7 +452,7 @@
                 33
             ],
             "instrucciones": "Marina pollo en salsa de soja y miel. Asa y sirve con arroz, papas fritas y salsa teriyaki.",
-            "foto": "url_imagen_pollo_teriyaki.jpg"
+            "foto": "image/teriyaki.jpg"
         },
         {
             "id": 18,
@@ -465,7 +465,7 @@
                 29
             ],
             "instrucciones": "Saltea tofu y calabacín en salsa de soja. Rellena tacos de pasta de espelta y setas shiitake.",
-            "foto": "url_imagen_tacos_vegetarianos.jpg"
+            "foto": "/image/vegetarianos.jpg"
         },
         {
             "id": 19,

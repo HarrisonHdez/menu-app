@@ -28,6 +28,12 @@
   flex-direction: column;
   gap: 20px;
 }
+.form__image  {
+  max-width: 500px;
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
 /* ========================
    Home
 ======================== */
